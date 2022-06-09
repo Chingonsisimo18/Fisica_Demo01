@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul1"
+    android:backgroundTint="@color/azul1"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pattern">
+
+        <EditText
+            android:id="@+id/velocidad"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="80dp"
+            android:background="@color/white"
+            android:hint="Velocidad(m/s)"
+            android:textAlignment="center"
+            android:textColor="@color/azul3"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/carga"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/fuerza"
+            android:layout_width="156dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="52dp"
+            android:background="@color/white"
+            android:hint="Fuerza"
+            android:textAlignment="center"
+            android:textColor="@color/azul3"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="@+id/angulo"
+            app:layout_constraintHorizontal_bias="0.527"
+            app:layout_constraintStart_toStartOf="@+id/campoM" />
+
+        <EditText
+            android:id="@+id/angulo"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            android:hint="Angulo (°)"
+            android:textAlignment="center"
+            android:textColor="@color/azul3"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/velocidad"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/velocidad"
+            app:layout_constraintTop_toBottomOf="@+id/velocidad" />
+
+        <EditText
+            android:id="@+id/campoM"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/white"
+            android:hint="Campo Magnetico (T)"
+            android:textAlignment="center"
+            android:textColor="@color/azul3"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/carga"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/carga"
+            app:layout_constraintTop_toBottomOf="@+id/carga" />
+
+        <EditText
+            android:id="@+id/carga"
+            android:layout_width="97dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:background="@color/white"
+            android:hint="Carga(C)"
+            android:textAlignment="center"
+            android:textColor="@color/azul3"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.231"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="360dp"
+            android:backgroundTint="@color/azul4"
+            android:text="Calcular!"
+            android:textAlignment="center"
+            android:textColor="@color/azul1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

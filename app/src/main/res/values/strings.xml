@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Fisica Proyecto</string>
+    <string name="eror">Favor de Llenar todos los campos necesarios.</string>
+    <string name="completos">Todos los campos se encuentran llenos.</string>
+</resources>
